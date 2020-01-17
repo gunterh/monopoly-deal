@@ -83,7 +83,7 @@ export const Card: React.FC<CardProps> = ({
       rx="20"
       style={{ stroke: '#000000', strokeWidth: 2, fill: color }}
     />
-    <Title x="100" y="185">
+    <Title x="50%" y="185" alignmentBaseline="middle" textAnchor="middle">
       {title}
     </Title>
     {value && (

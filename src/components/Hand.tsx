@@ -7,8 +7,6 @@ import { Hotel } from './Hotel';
 import { House } from './House';
 import styled from 'styled-components';
 
-const size = 100;
-
 const deck = [
   DealBreaker,
   DealBreaker,
@@ -24,14 +22,11 @@ const CardContainer = styled.div<{ index: number; collapsed: boolean }>`
   top: ${p => p.index * 0}px;
   left: ${p => p.index * (p.collapsed ? 10 : 110)}px;
   transition: left 0.3s;
-  &:hover {
-    z-index: 9;
-  }
 `;
 
-export const Hand = ({ collapsed, handleClick }) => {
+export const Hand = ({ collapsed, handleClick, size }) => {
   return (
-    <div style={{ position: 'relative' }}>
+    <>
       {deck.map((Card, index) => (
         <CardContainer
           key={index}
@@ -42,6 +37,6 @@ export const Hand = ({ collapsed, handleClick }) => {
           <Card size={size} />
         </CardContainer>
       ))}
-    </div>
+    </>
   );
 };
