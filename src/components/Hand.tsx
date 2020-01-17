@@ -1,11 +1,11 @@
-import React from "react";
-import { DealBreaker } from "./DealBreaker";
-import { DebtCollector } from "./DebtCollector";
-import { DoubleTheRent } from "./DoubleTheRent";
-import { ForceDeal } from "./ForceDeal";
-import { Hotel } from "./Hotel";
-import { House } from "./House";
-import styled from "styled-components";
+import React from 'react';
+import { DealBreaker } from './DealBreaker';
+import { DebtCollector } from './DebtCollector';
+import { DoubleTheRent } from './DoubleTheRent';
+import { ForceDeal } from './ForceDeal';
+import { Hotel } from './Hotel';
+import { House } from './House';
+import styled from 'styled-components';
 
 const size = 100;
 
@@ -31,7 +31,7 @@ const CardContainer = styled.div<{ index: number; collapsed: boolean }>`
 
 export const Hand = ({ collapsed, handleClick }) => {
   return (
-    <div style={{ position: "relative" }}>
+    <div style={{ position: 'relative' }}>
       {deck.map((Card, index) => (
         <CardContainer
           key={index}

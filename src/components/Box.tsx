@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from 'styled-components';
 import {
   space,
   color,
@@ -18,7 +18,7 @@ import {
   GridAreaProps,
   shadow,
   ShadowProps
-} from "styled-system";
+} from 'styled-system';
 
 export interface BoxProps
   extends SpaceProps,
@@ -33,7 +33,7 @@ export interface BoxProps
 
 export const Box = styled.div<BoxProps>(
   {
-    boxSizing: "border-box",
+    boxSizing: 'border-box',
     minWidth: 0
   },
   space,

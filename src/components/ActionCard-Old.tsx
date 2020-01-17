@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const CardView = styled.div`
   font-size: ${(p: { size: number }) => p.size * 0.002}em;

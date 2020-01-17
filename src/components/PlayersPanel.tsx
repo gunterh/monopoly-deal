@@ -1,6 +1,6 @@
-import React from "react";
-import { Box } from "./Box";
-import { Grid } from "./Grid";
+import React from 'react';
+import { Box } from './Box';
+import { Grid } from './Grid';
 
 export const PlayersPanel = () => {
   return (

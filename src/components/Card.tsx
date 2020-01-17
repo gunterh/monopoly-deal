@@ -1,5 +1,5 @@
-import React from "react";
-import styled from "styled-components";
+import React from 'react';
+import styled from 'styled-components';
 
 const Svg = styled.svg`
   width: ${(p: { size: number }) => p.size}px;
@@ -14,13 +14,13 @@ const ValueText = styled.text`
 `;
 
 interface CardValueProps {
-  position: "top" | "bottom";
+  position: 'top' | 'bottom';
   value: number;
 }
 
 const CardValue = ({ value, position }: CardValueProps) => {
-  const cx = position === "top" ? 85 : 421;
-  const cy = position === "top" ? 85 : 701;
+  const cx = position === 'top' ? 85 : 421;
+  const cy = position === 'top' ? 85 : 701;
   return (
     <svg>
       <circle
@@ -28,9 +28,9 @@ const CardValue = ({ value, position }: CardValueProps) => {
         cy={cy}
         r="49"
         style={{
-          stroke: "#000000",
+          stroke: '#000000',
           strokeWidth: 1,
-          fill: "none"
+          fill: 'none'
         }}
       />
       <circle
@@ -38,9 +38,9 @@ const CardValue = ({ value, position }: CardValueProps) => {
         cy={cy}
         r="45"
         style={{
-          stroke: "#000000",
+          stroke: '#000000',
           strokeWidth: 2,
-          fill: "none"
+          fill: 'none'
         }}
       />
       <ValueText x={cx} y={cy} alignmentBaseline="middle" textAnchor="middle">
@@ -70,9 +70,9 @@ export const Card: React.FC<CardProps> = ({
       height="786"
       rx="20"
       style={{
-        stroke: "#000000",
+        stroke: '#000000',
         strokeWidth: 1,
-        fill: "white"
+        fill: 'white'
       }}
     />
     <rect
@@ -81,7 +81,7 @@ export const Card: React.FC<CardProps> = ({
       width="466"
       height="746"
       rx="20"
-      style={{ stroke: "#000000", strokeWidth: 2, fill: color }}
+      style={{ stroke: '#000000', strokeWidth: 2, fill: color }}
     />
     <Title x="100" y="185">
       {title}

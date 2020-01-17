@@ -1,7 +1,7 @@
-import React from "react";
-import styled from "styled-components";
-import { ActionCircle } from "./ActionCircle";
-import { Card } from "./Card";
+import React from 'react';
+import styled from 'styled-components';
+import { ActionCircle } from './ActionCircle';
+import { Card } from './Card';
 
 const Action = styled.text`
   font-size: 50px;

@@ -1,4 +1,4 @@
-import React from "react";
+import React from 'react';
 
 export const ActionCircle = () => (
   <>
@@ -7,9 +7,9 @@ export const ActionCircle = () => (
       cy="701"
       r="45"
       style={{
-        stroke: "#000000",
+        stroke: '#000000',
         strokeWidth: 2,
-        fill: "none"
+        fill: 'none'
       }}
     />
     <circle
@@ -17,9 +17,9 @@ export const ActionCircle = () => (
       cy="393"
       r="163"
       style={{
-        stroke: "#000000",
+        stroke: '#000000',
         strokeWidth: 4,
-        fill: "white"
+        fill: 'white'
       }}
     />
   </>
