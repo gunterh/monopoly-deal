@@ -11,7 +11,6 @@ export default function App() {
   return (
     <div>
       <h1>Monopoly Deal</h1>
-      <h3>(Click to {collapsed ? "expand" : "collapse"})</h3>
       <Hand {...{ collapsed, handleClick }} />
     </div>
   );
