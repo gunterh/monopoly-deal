@@ -1,5 +1,6 @@
 import React from "react";
 import { Hand } from "./components/Hand";
+import { PlayersPanel } from "./components/PlayersPanel";
 
 export default function App() {
   const [collapsed, setCollapsed] = React.useState(true);
@@ -10,7 +11,7 @@ export default function App() {
 
   return (
     <div>
-      <h1>Monopoly Deal</h1>
+      <PlayersPanel />
       <Hand {...{ collapsed, handleClick }} />
     </div>
   );
