@@ -21,13 +21,21 @@ export default function App() {
       height="100vh"
       p="20px"
       gridTemplateRows="max-content 160px"
-      gridRowGap="20px"
+      gridRowGap="10px"
+      position="relative"
     >
       <PlayersPanel />
-      <Flex position="relative" overflow="scroll">
-        <Hand {...{ collapsed, handleClick }} size={size} />
-        {collapsed && <Bank size={size} />}
-      </Flex>
+      <Box overflow="hidden">
+        <Flex
+          position="relative"
+          overflowX="auto"
+          overflowY="hidden"
+          height="100%"
+        >
+          <Hand {...{ collapsed, handleClick }} size={size} />
+          {collapsed && <Bank size={size} />}
+        </Flex>
+      </Box>
       <Box border="1px dashed" width="100%" height="100%" p="20px" />
     </Grid>
   );

@@ -3,32 +3,21 @@ import { Box } from './Box';
 import { Grid } from './Grid';
 
 export const PlayersPanel = () => {
+  const players = new Array(6).fill(null);
   return (
-    <Box overflowX="scroll" overflowY="hidden" height="100px">
+    <Box overflowX="hidden" overflowY="hidden" height="100px">
       <Grid
-        gridTemplateColumns="max-content max-content max-content max-content"
+        gridTemplateColumns={`repeat(${players.length}, max-content)`}
         gridColumnGap="10px"
         pb="20px"
         gridAutoFlow="column"
+        overflowX="auto"
       >
-        <Box height="100px" width="80px" border="1px solid">
-          Player 1
-        </Box>
-        <Box height="100px" width="80px" border="1px solid">
-          Player 2
-        </Box>
-        <Box height="100px" width="80px" border="1px solid">
-          Player 3
-        </Box>
-        <Box height="100px" width="80px" border="1px solid">
-          Player 4
-        </Box>
-        <Box height="100px" width="80px" border="1px solid">
-          Player 4
-        </Box>
-        <Box height="100px" width="80px" border="1px solid">
-          Player 4
-        </Box>
+        {players.map((p, index) => (
+          <Box key={index} height="100px" width="80px" border="1px solid">
+            {`Player ${index + 1}`}
+          </Box>
+        ))}
       </Grid>
     </Box>
   );
