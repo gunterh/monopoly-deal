@@ -6,6 +6,8 @@ import { Bank } from './components/Bank';
 import { Box } from './components/Box';
 import './index.css';
 import { Grid } from './components/Grid';
+import { propertySets } from './cards';
+import { Card } from './components/Card';
 
 const size = 100;
 
@@ -36,7 +38,27 @@ export default function App() {
           {collapsed && <Bank size={size} />}
         </Flex>
       </Box>
-      <Box border="1px dashed" width="100%" height="100%" p="20px" />
+      <Flex
+        border="1px dashed"
+        width="100%"
+        height="100%"
+        p="20px"
+        overflowY="auto"
+        flexWrap="wrap"
+      >
+        {Object.entries(propertySets).map(([key, value]) => {
+          return value.properties.map(property => (
+            <div>
+              <Card
+                title={property}
+                size={size}
+                color={value.color}
+                value={value.value}
+              />
+            </div>
+          ));
+        })}
+      </Flex>
     </Grid>
   );
 }

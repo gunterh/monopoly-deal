@@ -49,7 +49,7 @@ export const House = ({ size }: HouseProps) => {
       </Description>
       <Description
         x="253"
-        y="640\"
+        y="640"
         alignmentBaseline="middle"
         textAnchor="middle"
       >
