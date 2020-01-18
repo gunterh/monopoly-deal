@@ -1,6 +1,7 @@
 import React from 'react';
 import { Box } from './Box';
 import { Grid } from './Grid';
+import { Flex } from './Flex';
 
 export const PlayersPanel = () => {
   const players = new Array(6).fill(null);
@@ -14,9 +15,17 @@ export const PlayersPanel = () => {
         overflowX="auto"
       >
         {players.map((p, index) => (
-          <Box key={index} height="100px" width="80px" border="1px solid">
+          <Flex
+            justifyContent="center"
+            p="5px"
+            key={index}
+            height="100px"
+            width="80px"
+            backgroundColor="#ffffe9"
+            borderRadius="5%"
+          >
             {`Player ${index + 1}`}
-          </Box>
+          </Flex>
         ))}
       </Grid>
     </Box>
