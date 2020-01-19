@@ -109,3 +109,22 @@ export const actionCards = {
   hotel: { quantity: 3, value: 4 },
   doubleTheRent: { quantity: 2, value: 1 },
 };
+
+/* Money Cards
+There are a total of 20 Money cards in the Monopoly Deal Deck, $57 Million dolars total,
+and include: 
+one $10M money card, 
+two $5M money cards, 
+three $4M money cards, 
+three $3M money cards, 
+five $2M money cards, 
+and six $1M money cards.
+*/
+export const moneyCards = {
+  ten: { quantity: 1, value: 10, color: '#AD9344' },
+  fice: { quantity: 2, value: 5, color: '#867DBF' },
+  four: { quantity: 3, value: 4, color: '#A5C1DE' },
+  three: { quantity: 3, value: 3, color: '#B6B8B6' },
+  two: { quantity: 5, value: 2, color: '#B2ABB2' },
+  one: { quantity: 6, value: 1, color: '#B6BDAD' },
+};

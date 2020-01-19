@@ -6,8 +6,9 @@ import { Bank } from './components/Bank';
 import { Box } from './components/Box';
 import './index.css';
 import { Grid } from './components/Grid';
-import { propertySets } from './cards';
+import { propertySets, moneyCards } from './cards';
 import { Card } from './components/Card';
+import { MoneyCard } from './components/MoneyCard';
 
 const size = 100;
 
@@ -46,18 +47,23 @@ export default function App() {
         overflowY="auto"
         flexWrap="wrap"
       >
-        {Object.entries(propertySets).map(([key, value]) => {
-          return value.properties.map(property => (
-            <div>
+        {Object.entries(propertySets).map(([keyPropertySet, propertySet]) => {
+          return propertySet.properties.map(property => (
+            <div key={keyPropertySet + property}>
               <Card
                 title={property}
                 size={size}
-                color={value.color}
-                value={value.value}
+                color={propertySet.color}
+                value={propertySet.value}
               />
             </div>
           ));
         })}
+        {Object.entries(moneyCards).map(([key, money]) => (
+          <div key={key}>
+            <MoneyCard size={size} color={money.color} value={money.value} />
+          </div>
+        ))}
       </Flex>
     </Grid>
   );
