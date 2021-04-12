@@ -20,57 +20,57 @@ export const propertySets = {
     properties: [
       'North Carolina Avenue',
       'Pacific Avenue',
-      'Pennsylvania Avenue',
+      'Pennsylvania Avenue'
     ],
-    rents: [],
+    rents: []
   },
   darkBlue: {
     color: 'darkblue',
     value: 4,
     properties: ['Boardwalk', 'Park Place'],
-    rents: [],
+    rents: []
   },
   lightBlue: {
     color: 'lightblue',
     value: 1,
     properties: ['Connecticut Avenue', 'Oriental Avenue', 'Vermont Avenue'],
-    rents: [],
+    rents: []
   },
   red: {
     color: 'red',
     value: 3,
     properties: ['Kentucky Avenue', 'Inidiana Avenue', 'Illinois Avenue'],
-    rents: [],
+    rents: []
   },
   utility: {
     color: 'lightGreen',
     value: 2,
     properties: ['Water Works', 'Electric Company'],
-    rents: [],
+    rents: []
   },
   yellow: {
     color: 'yellow',
     value: 3,
     properties: ['Ventnor Avenue', 'Marvin Gardens', 'Atlantic Avenue'],
-    rents: [],
+    rents: []
   },
   orange: {
     color: 'orange',
     value: 2,
     properties: ['New York Avenue', 'ST. James Place', 'Tennessee Avenue'],
-    rents: [],
+    rents: []
   },
   brown: {
     color: 'brown',
     value: 1,
     properties: ['Baltic Avenue', 'Mediterranean Avenue'],
-    rents: [],
+    rents: []
   },
   purple: {
     color: 'purple',
     value: 2,
     properties: ['ST. Charles Place', 'Virginia Avenue', 'States Avenue'],
-    rents: [],
+    rents: []
   },
   railroad: {
     color: 'grey',
@@ -79,10 +79,10 @@ export const propertySets = {
       'Short Line',
       'B. & O. Railroad',
       'Reading Railroad',
-      'Pennsylvania Railroad',
+      'Pennsylvania Railroad'
     ],
-    rents: [],
-  },
+    rents: []
+  }
 };
 
 /* Action Cards
@@ -107,7 +107,7 @@ export const actionCards = {
   passGo: { quantity: 10, value: 1 },
   house: { quantity: 3, value: 3 },
   hotel: { quantity: 3, value: 4 },
-  doubleTheRent: { quantity: 2, value: 1 },
+  doubleTheRent: { quantity: 2, value: 1 }
 };
 
 /* Money Cards
@@ -126,5 +126,5 @@ export const moneyCards = {
   four: { quantity: 3, value: 4, color: '#A5C1DE' },
   three: { quantity: 3, value: 3, color: '#B6B8B6' },
   two: { quantity: 5, value: 2, color: '#B2ABB2' },
-  one: { quantity: 6, value: 1, color: '#B6BDAD' },
+  one: { quantity: 6, value: 1, color: '#B6BDAD' }
 };
