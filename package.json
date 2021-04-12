@@ -13,7 +13,7 @@
     "react-scripts": "3.0.1",
     "styled-components": "4.4.1",
     "styled-system": "5.1.4",
-    "xstate": "4.7.5"
+    "xstate": "4.17.1"
   },
   "devDependencies": {
     "typescript": "3.3.3"
